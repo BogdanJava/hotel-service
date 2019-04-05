@@ -1,0 +1,17 @@
+@import "~@angular/material/theming";
+
+@mixin header-component-theme($main) {
+  $primary: map-get($main, primary);
+  $accent: map-get($main, accent);
+
+  .mat-list-option:hover,
+  .mat-list-option:focus,
+  .mat-nav-list .mat-list-item:hover,
+  .mat-nav-list .mat-list-item:focus,
+  .mat-action-list .mat-list-item:hover,
+  .mat-action-list .mat-list-item:focus {
+    background: mat-color($accent, lighter);
+    color: mat-color($accent, dark);
+  }
+
+}
