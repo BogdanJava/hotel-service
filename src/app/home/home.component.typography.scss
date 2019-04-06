@@ -1,0 +1,9 @@
+@import "~@angular/material/theming";
+
+@mixin home-component-typography($typography, $theme) {
+  $accent: map-get($theme, accent);
+
+  .header-container > .mat-subheading-2 {
+    color: mat-color($accent);
+  }
+}
